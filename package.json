@@ -1,0 +1,55 @@
+{
+  "name": "@civilization/model-core",
+  "version": "0.1.0",
+  "description": "Unified LLM connection core package with bidirectional translation for official and protocol providers",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/civilization-os/model_core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/civilization-os/model_core/issues"
+  },
+  "homepage": "https://github.com/civilization-os/model_core#readme",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@google/genai": "^2.29.1",
+    "openai": "^4.86.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "keywords": [
+    "llm",
+    "ai",
+    "model-core",
+    "multi-agent",
+    "openai",
+    "gemini",
+    "anthropic",
+    "deepseek",
+    "vllm",
+    "ollama"
+  ],
+  "author": "civilization-os",
+  "license": "MIT"
+}
